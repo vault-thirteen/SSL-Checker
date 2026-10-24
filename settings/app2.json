@@ -1,0 +1,13 @@
+{
+  "debugMode": false,
+  "useColours": true,
+  "enableAnsiColours": true,
+  "poolFiles": [
+    {
+      "poolName": "Russian",
+      "filePath": "settings\\Russian.json"
+    }
+  ],
+  "crlTtlMinutes": 15,
+  "certFileVerificationDelayMs": 1000
+}

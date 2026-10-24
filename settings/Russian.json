@@ -1,0 +1,32 @@
+{
+  "poolName": "Russian",
+  "keys": [
+    {
+      "name": "Russian Trusted Root CA",
+      "keyType": 1,
+      "keySize": 4096,
+      "SHA256": "D2:6D:2D:02:31:B7:C3:9F:92:CC:73:85:12:BA:54:10:35:19:E4:40:5D:68:B5:BD:70:3E:97:88:CA:8E:CF:31",
+      "timeValidUntil": "2032-02-27",
+      "URL": "https://gu-st.ru/content/downloads/Russian_Trusted_Root_CA.cer",
+      "filePath": "keys\\Russian\\Russian_Trusted_Root_CA.cer"
+    },
+    {
+      "name": "Russian Trusted Sub CA",
+      "keyType": 1,
+      "keySize": 4096,
+      "SHA256": "BB:BD:E2:10:3E:79:0B:99:9E:C6:2B:D0:3C:F6:25:A5:A2:E7:C3:16:E1:0A:FE:6A:49:0E:ED:EA:D8:B3:FD:9B",
+      "timeValidUntil": "2027-03-06",
+      "URL": "https://gu-st.ru/content/downloads/Russian_Trusted_Sub_CA.cer",
+      "filePath": "keys\\Russian\\Russian_Trusted_Sub_CA.cer"
+    },
+    {
+      "name": "Russian Trusted Sub CA 2024",
+      "keyType": 1,
+      "keySize": 4096,
+      "SHA256": "21:55:78:50:36:C9:00:DB:B5:F1:BB:2A:15:69:C8:0C:55:59:5B:D6:BF:94:86:7A:29:BB:DD:BC:7D:88:A3:F2",
+      "timeValidUntil": "2029-07-19",
+      "URL": "https://gu-st.ru/content/downloads/Russian_Trusted_Sub_CA_2024.cer",
+      "filePath": "keys\\Russian\\Russian_Trusted_Sub_CA_2024.cer"
+    }
+  ]
+}
