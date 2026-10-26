@@ -26,12 +26,6 @@ type AppSettings struct {
 	// 'cmd.exe', which do not enable ANSI colours by default.
 	EnableAnsiColours bool `json:"enableAnsiColours"`
 
-	// List of custom pools of root CA certificates which can be used for
-	// certificate checks. These custom pools only set root CA certificates. All
-	// the certificate revocation lists (CRLs) are downloaded and cached
-	// automatically during the runtime.
-	PoolFilesSettings []cm.PoolFileSettings `json:"poolFiles"`
-
 	// Time in minutes for which a CRL is considered fresh. CRLs older than
 	// this time are considered out-of-date and can not be used.
 	CrlTtlMinutes uint `json:"crlTtlMinutes"`
@@ -45,6 +39,12 @@ type AppSettings struct {
 	// fails to get certificate files, try increasing the delay or wait some
 	// time for the servers to cool down.
 	CertFileVerificationDelayMs uint `json:"certFileVerificationDelayMs"`
+
+	// List of custom pools of root CA certificates which can be used for
+	// certificate checks. These custom pools only set root CA certificates. All
+	// the certificate revocation lists (CRLs) are downloaded and cached
+	// automatically during the runtime.
+	PoolFilesSettings []cm.PoolFileSettings `json:"poolFiles"`
 }
 
 func NewAppSettings(filePath string) (appSettings *AppSettings, err error) {

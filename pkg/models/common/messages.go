@@ -14,6 +14,7 @@ const (
 	Msg_Separator                        = "---------------------------------------------------------------------------"
 	Msg_UsingSystemRootCertificates      = "Using system root certificates."
 	Msg_NoErrorsWereFoundInCertificates  = "No errors were found in certificates."
+	Msg_CheckingCertificates             = "Checking certificates ..."
 	Msg_CheckingRevocationLists          = "Checking revocation lists ..."
 	Msg_NoRevocatedCertificates          = "No revocated certificates."
 	Msg_PoolListHeader                   = "List of loaded root certificate pools"
@@ -34,6 +35,7 @@ const (
 	Msgf_RootCertificatePoolsLoaded      = "%d root certificate pools were loaded."
 	Msgf_UsingCustomCertificatePool      = "Using custom certificate pool: %s."
 	Msgf_ProcessingAddress               = "Processing address: %s"
+	Msgf_Address                         = "Address: %s"
 	Msgf_RetrievedCertificatesCount      = "Number of retrieved certificates: %d"
 	Msgf_UsingCustomRootCertificatesPool = "Using custom root certificates pool: %s"
 	Msgf_PoolListItem                    = "\t[%02d] %s" + h.CRLF

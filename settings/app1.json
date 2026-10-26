@@ -2,16 +2,16 @@
   "debugMode": false,
   "useColours": true,
   "enableAnsiColours": true,
+  "crlTtlMinutes": 15,
+  "certFileVerificationDelayMs": 1000,
   "poolFiles": [
-    {
-      "poolName": "Russian",
-      "filePath": "settings\\Russian.json"
-    },
     {
       "poolName": "Google",
       "filePath": "settings\\Google.json"
+    },
+    {
+      "poolName": "Russian",
+      "filePath": "settings\\Russian.json"
     }
-  ],
-  "crlTtlMinutes": 15,
-  "certFileVerificationDelayMs": 1000
+  ]
 }

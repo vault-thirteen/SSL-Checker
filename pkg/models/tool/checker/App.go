@@ -299,6 +299,7 @@ func (app *App) checkDomainCertificates(domain string, portNumber uint16) (err e
 	}
 
 	// Verification.
+	cio.PrintMessage(cio.FormatMessage(cm.Msgf_Address, address))
 	{
 		var certErrors []error
 		err, certErrors = app.verifyCertificates(allCerts, domain)
@@ -369,6 +370,7 @@ func (app *App) verifyCertificates(allCerts []*x509.Certificate, domain string) 
 	if len(allCerts) < 1 {
 		return errors.ErrorFromText(cm.Err_NoCertificates), nil
 	}
+	cio.PrintMessage(cm.Msg_CheckingCertificates)
 
 	var useSystemRootCertificates bool = (app.poolIdx == nil)
 	if useSystemRootCertificates {
@@ -411,7 +413,11 @@ func (app *App) verifyCertificates(allCerts []*x509.Certificate, domain string) 
 	return nil, certErrors
 }
 func (app *App) checkRevocations(allCerts []*x509.Certificate) (err error, certErrors []error) {
+	if len(allCerts) < 1 {
+		return errors.ErrorFromText(cm.Err_NoCertificates), nil
+	}
 	cio.PrintMessage(cm.Msg_CheckingRevocationLists)
+
 	certErrors = make([]error, len(allCerts))
 	var useSystemRootCertificates bool = (app.poolIdx == nil)
 
