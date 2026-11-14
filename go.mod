@@ -1,8 +1,8 @@
 module github.com/vault-thirteen/SSL-Checker
 
-go 1.26.10
+go 1.27.4
 
-require github.com/vault-thirteen/auxie v0.43.2
+require github.com/vault-thirteen/auxie v0.45.0
 
 require (
 	github.com/kr/pretty v0.3.1 // indirect
